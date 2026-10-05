@@ -148,3 +148,9 @@ body{margin:0;font-family:Arial,'Noto Sans TC','Microsoft JhengHei',sans-serif;f
 @media(max-height:760px) and (min-width:1101px){.space{top:78px;bottom:295px;min-height:210px}.scene3d-shell,.scene3d-mount{min-height:210px}.scene-help>span{max-width:230px;text-align:center}.camera-toolbar button{padding:7px}}
 @media(max-width:1100px) and (min-width:761px){.space{top:82px;left:235px;right:235px;bottom:395px}.camera-toolbar{gap:3px}.camera-toolbar button{font-size:12px;padding:6px}.camera-toolbar button span{display:none}.scene-help>span{max-width:200px;text-align:center}}
 @media(max-width:760px){.space{position:relative;inset:auto;height:380px;min-height:380px;margin-top:4px}.scene3d-shell,.scene3d-mount{min-height:380px}.camera-toolbar{top:8px}.scene-help{bottom:7px;font-size:11px}.observer-marker-label small{font-size:11px}}
+
+/* Four seasons comparison */
+.season-earth-label{display:none;position:absolute;transform:translate(-50%,0);z-index:2;text-align:center;pointer-events:none;border:1px solid #698ba6;background:#101c30e8;color:white;border-radius:9px;padding:4px 9px;white-space:nowrap}.season-earth-label strong{display:block;font-size:14px}.season-earth-label small{display:block;font-size:10px;color:#ccd8e5}.season-0 strong{color:#8aeca7}.season-1 strong{color:#ffe086}.season-2 strong{color:#ffb287}.season-3 strong{color:#a7dbff}.comparison-note{flex-basis:100%;text-align:center;color:#ffdf9c}.camera-toolbar .seasons-toggle{border-color:#d6ae58;color:#ffe09b}.light-mode .camera-toolbar .seasons-toggle{color:#785819}.camera-toolbar{flex-wrap:wrap;justify-content:center;max-width:calc(100% - 12px)}
+@media(max-width:760px){.camera-toolbar{width:calc(100% - 18px);gap:4px}.camera-toolbar button{font-size:11px;padding:7px}.season-earth-label{padding:3px 6px}.season-earth-label strong{font-size:12px}.season-earth-label small{font-size:9px}.scene-help .comparison-note{font-size:10px}}
+
+.camera-toolbar{width:max-content}
