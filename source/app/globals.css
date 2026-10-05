@@ -154,3 +154,6 @@ body{margin:0;font-family:Arial,'Noto Sans TC','Microsoft JhengHei',sans-serif;f
 @media(max-width:760px){.camera-toolbar{width:calc(100% - 18px);gap:4px}.camera-toolbar button{font-size:11px;padding:7px}.season-earth-label{padding:3px 6px}.season-earth-label strong{font-size:12px}.season-earth-label small{font-size:9px}.scene-help .comparison-note{font-size:10px}}
 
 .camera-toolbar{width:max-content}
+
+/* Geography labels: base 14px enlarged by three typographic points. */
+.landmark-leaders{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;overflow:hidden}.landmark-line{display:none;stroke:#f29baa;stroke-width:1.5}.landmark-line.landmark-2{stroke:#dbeafe}.landmark-line.landmark-3{stroke:#ffda70}.landmark-label{display:none;position:absolute;transform:translate(-50%,-50%);pointer-events:none;z-index:2;white-space:nowrap;font-size:calc(14px + 3pt);font-weight:700;line-height:1.3;padding:4px 9px;border:1px solid #f29baa;border-radius:8px;background:#672d3def;color:#fff;box-shadow:0 2px 8px #0005}.landmark-label.landmark-2{background:#183a5aef;border-color:#dbeafe}.landmark-label.landmark-3{background:#604716ef;border-color:#ffda70;color:#ffe5a0}
