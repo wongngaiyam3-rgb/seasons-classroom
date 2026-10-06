@@ -7,6 +7,7 @@ import {RadioGroup,RadioGroupItem} from '@/components/ui/radio-group';
 import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/ui/dialog';
 import {Sun,Moon,RotateCcw,Play,Pause,HelpCircle,Globe,Clock} from 'lucide-react';
 import Scene3D from './Scene3D';
+import {OBSERVER_TEXTURE} from './ObserverTexture';
 import {dailySolar,timeLabel} from '@/lib/dayNight';
 
 const questions=[
@@ -26,7 +27,7 @@ function SkyView({hour,latitude}:{hour:number;latitude:number}){
  <rect width="260" height="220" fill="url(#daily-sky)"/>
  {day?<><circle cx={x} cy={y} r="14" fill="#ffdb77"/><path d={`M${x},${y} L130,159`} stroke="#ffe3a0" strokeWidth="2"/></>:<><circle cx="35" cy="38" r="1.5" fill="white"/><circle cx="213" cy="55" r="1.3" fill="white"/><circle cx="169" cy="29" r="1.5" fill="white"/><text x="130" y="52" textAnchor="middle" fill="white" fontSize="15">太陽在地平線下</text></>}
  <rect y="159" width="260" height="61" fill={day?'#425f34':'#263831'}/><path d="M0 159H260" stroke="#f2f4f8" strokeWidth="1"/>
- <circle cx="130" cy="109" r="9" fill="#f5a126"/><path d="M130 120V139 M124 126L120 140 M136 126L140 140 M127 139V157 M133 139V157" stroke="#e58d18" strokeWidth="7" strokeLinecap="round"/>
+ <image href={OBSERVER_TEXTURE} x="108" y="96" width="44" height="66"/>
  <text x="8" y="183" fill="#dce4e9" fontSize="13">東</text><text x="238" y="183" fill="#dce4e9" fontSize="13">西</text><text x="174" y="147" fill="white" fontSize="14">{s.altitude.toFixed(1)}°</text>
  </svg>;
 }
